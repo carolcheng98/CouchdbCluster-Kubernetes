@@ -1,1 +1,1 @@
-# HDFS-Emane
+# CouchdbCluster-Kubernetes
