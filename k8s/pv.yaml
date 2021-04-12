@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: couch-vol-0
+  labels:
+    volume: couch-volume
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/cc/couchdb/couchdb-0"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: couch-vol-1
+  labels:
+    volume: couch-volume
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/cc/couchdb/couchdb-1"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: couch-vol-2
+  labels:
+    volume: couch-volume
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/home/cc/couchdb/couchdb-2"
